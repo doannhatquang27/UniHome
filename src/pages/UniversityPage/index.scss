@@ -1,0 +1,74 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+$disable: #d6d6d6;
+
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+$border-radius: 4px;
+
+.uni-page {
+  padding-left: calc(4vw - 13px);
+  padding-right: calc(4vw - 13px);
+
+  &_rent-list-title {
+    color: $text-color;
+    font-weight: $medium;
+    font-size: 1.3rem;
+    margin: 30px 5px 5px 10px;
+  }
+
+  &_uni-name {
+    font-weight: $semi-bold;
+    font-size: 1.4rem;
+  }
+}
+
+.pagination {
+  margin-top: 2vh;
+}
+
+.side-bar {
+  display: none;
+}
+
+.no_data {
+  height: calc(100vh - 84px);
+
+  &_content {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &__text {
+      font-family: sans-serif;
+      font-size: 35px;
+      font-weight: normal;
+      margin: 0 0 50px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #082b34;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .filter-panel {
+    display: none;
+  }
+
+  .footer-component {
+    display: none;
+  }
+
+  .side-bar {
+    display: block;
+  }
+}

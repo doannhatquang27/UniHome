@@ -1,0 +1,35 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+
+$extra-bold: 800;
+
+.rent-entity-list {
+  margin-bottom: 40px;
+  width: 100%;
+
+  &_title {
+    font-size: 30px;
+    font-weight: $extra-bold;
+    color: $text-color;
+    margin: 8px;
+  }
+
+  .list {
+    margin-top: 23px;
+  }
+
+  .all-button {
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: $main-color;
+    color: $hightlight;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $sub-main;
+    }
+  }
+}

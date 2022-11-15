@@ -1,0 +1,140 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+$disable: #d6d6d6;
+
+$medium: 500;
+
+.house-card {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none !important;
+  border-left: 1px solid $disable;
+  border-right: 1px solid $disable;
+  border-bottom: 1px solid $disable;
+
+  & > * {
+    font-family: "Be Vietnam Pro", sans-serif !important;
+  }
+
+  .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-decoration: none;
+  }
+
+  .media {
+    position: relative;
+
+    &_image {
+      width: 100%;
+      object-fit: cover;
+      height: 200px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    &_label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px;
+      margin: 5px;
+      background-color: white;
+      opacity: 0.8;
+      border-radius: 4px;
+
+      & span {
+        color: $text-color;
+        font-weight: $medium;
+      }
+    }
+  }
+
+  .house-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2% 4% 2% 4%;
+    color: black;
+
+    &__house-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      &__text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.25;
+        color: $text-color;
+      }
+    }
+
+    &__address {
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+      font-size: 14px;
+      font-weight: 300;
+      color: $text-color;
+
+      & > .address {
+        color: #929292;
+        font-weight: 700;
+        width: 90%;
+      }
+    }
+  }
+
+  .gender-sharing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+    color: $text-color;
+  }
+
+  .icon-medium {
+    font-size: 24px;
+  }
+
+  .address-navigate {
+    color: $main-color;
+    cursor: default;
+
+    &_icon {
+      transform: rotateY(0deg) rotate(45deg);
+    }
+  }
+
+  .house-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    &_price {
+      font-weight: 700;
+      color: $main-color;
+    }
+
+    .contact-button {
+      background-color: $main-color;
+      color: $hightlight;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$main-color: #16a596;
+$hightlight: #fffdf8;
+
+.install-app-modal {
+  &_card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+
+    &_content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 500;
+      background-color: rgba(220, 220, 220, 0.463);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.reply-section {
+  &_text-area {
+    width: 100%;
+    border-radius: 4px;
+
+    .MuiOutlinedInput-root {
+      border-radius: 4px;
+    }
+  }
+
+  &_button-group {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &_button {
+    display: flex;
+    flex: 1;
+    font-weight: 600 !important;
+
+    &--cancel {
+      background-color: white !important;
+    }
+
+    &--submit {
+      color: white !important;
+    }
+  }
+}

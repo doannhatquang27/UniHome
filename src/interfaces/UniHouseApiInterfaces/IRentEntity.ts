@@ -1,0 +1,42 @@
+import IHouse from "./IHouse";
+import IPoiList from "./IPoiList";
+import IRentFacility from "./IRentFacility";
+import IRentService from "./IRentService";
+import IRentType from "./IRentType";
+
+export default interface IRentEntity {
+  rentEntityId: string;
+  name: string;
+  description: string;
+  rentTypeId: string;
+  houseId: string;
+  isLatest: boolean;
+  distance: number;
+  price: number;
+  area: number;
+  gender: number;
+  image: string;
+  isSharing: boolean;
+  createdTime: string;
+  disableTime: string;
+  updateTime: string;
+  status: number;
+  statusString: string;
+  ownerPhone: string;
+  ownerAvatar: string;
+  house: IHouse;
+  rentType: IRentType;
+  appoinment: any;
+  qnA: any;
+  maxPeople: number;
+  currentPeople: number;
+  createdBy: string;
+  authorName: string | null;
+  rentFacility: IRentFacility[];
+  rentService: IRentService[];
+  poiList: IPoiList | null;
+  isDeposited: boolean;
+  depositeBy: string | null;
+  depositedTime: Date | null;
+  depositPrice: number;
+}

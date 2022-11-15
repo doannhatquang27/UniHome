@@ -1,0 +1,12 @@
+.payment-success {
+  & > * + * {
+    margin-top: 8px;
+  }
+
+  .waiting-background {
+    background-image: url("../../../assets/images/waiting-payment.svg");
+    height: calc(80vh);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

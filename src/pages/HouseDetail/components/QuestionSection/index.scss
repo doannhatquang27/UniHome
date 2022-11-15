@@ -1,0 +1,63 @@
+$sub-main: #21bcaa;
+$text-color: #42464d;
+$bold: 700;
+
+.question-section {
+  // padding: 10px;
+
+  &_border {
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .title {
+    margin: 28px 28px 16px 28px;
+    white-space: nowrap;
+    font-weight: $bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &_text-field {
+    width: 100%;
+    border-radius: 4px;
+
+    .MuiOutlinedInput-root {
+      border-radius: 4px;
+    }
+  }
+
+  &_submit-button-area {
+    margin-top: 10px;
+    height: 36px;
+
+    &--disable {
+      background-color: #f3f3f3 !important;
+      color: $sub-main !important;
+    }
+  }
+
+  &_button {
+    float: right;
+    color: white;
+  }
+
+  &_qna {
+    margin-top: 10px;
+  }
+}
+
+.annoucement {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", san-serif;
+  padding: 0 5px;
+  border-radius: 4px;
+  background-color: #fafafa;
+
+  &_button {
+    font-family: inherit !important;
+  }
+}

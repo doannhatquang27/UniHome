@@ -1,0 +1,28 @@
+.answer-margin {
+  margin-left: 30px;
+}
+
+.answer {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+
+  &_avatar {
+    margin: 0 5px;
+  }
+
+  &_user-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &_date {
+    font-size: 0.7rem;
+    color: #aaa;
+  }
+
+  &_content {
+    word-break: break-all;
+  }
+}

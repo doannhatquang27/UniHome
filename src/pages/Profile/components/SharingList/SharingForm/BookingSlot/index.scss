@@ -1,0 +1,47 @@
+.booking-slot {
+  &_title {
+    padding-left: 14px;
+    font-size: 0.8rem !important;
+  }
+
+  &__confirm {
+    display: flex;
+
+    &__field {
+      display: flex;
+      flex: 1;
+      margin-right: 5px;
+      & > .MuiOutlinedInput-root {
+        background-color: white;
+      }
+    }
+
+    &__button {
+      color: white;
+    }
+  }
+
+  &__button-group {
+    background-color: white;
+    margin: 4px;
+
+    &--morning {
+      background-color: rgba(231, 45, 45, 0.871) !important;
+      color: white !important;
+    }
+
+    &--afternoon {
+      background-color: rgba(62, 62, 216, 0.871) !important;
+      color: white !important;
+    }
+  }
+
+  &__grid {
+    padding: 1%;
+  }
+
+  &__slot-button {
+    background-color: white;
+    padding: 5px 5px;
+  }
+}

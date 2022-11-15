@@ -1,0 +1,40 @@
+$text-color: #42464d;
+
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+.question {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+
+  &_avatar {
+    margin: 0 5px;
+  }
+
+  &_user-name {
+    font-size: 16px;
+    font-weight: $semi-bold;
+    color: $text-color;
+  }
+
+  &_date {
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  &_content {
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: $light;
+    color: $text-color;
+  }
+}

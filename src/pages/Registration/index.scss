@@ -1,0 +1,17 @@
+.form-filling {
+  padding: 15px;
+  margin-top: 8%;
+  margin-left: 35%;
+  width: 500px;
+}
+
+hr {
+  margin: auto 5px;
+  border: 1px solid #16a596;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 1fr;
+}

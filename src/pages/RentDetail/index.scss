@@ -1,0 +1,183 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+$disable: #d6d6d6;
+
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+.rent-detail {
+  .padding-section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  &_name-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 28px;
+
+    .name-and-date {
+      padding-left: 10px;
+      margin-bottom: 30px;
+
+      .rent-name {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: $extra-bold;
+        color: #42464d;
+        display: block;
+      }
+
+      .date {
+        font-size: 20px;
+        font-weight: 400;
+        color: $text-color;
+      }
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: $extra-bold;
+      color: $main-color;
+    }
+
+    .unit {
+      font-size: 20px;
+      font-weight: $light;
+      color: $text-color;
+    }
+  }
+
+  &_section-block {
+    // border: 1px solid $main-color;
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-bottom: 15px;
+    border: 1px solid $main-color;
+    line-height: 1.5;
+
+    & span {
+      color: $text-color;
+    }
+
+    .title {
+      white-space: nowrap;
+      margin-bottom: 16px;
+      margin-right: 0.5rem;
+      font-weight: $bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      display: block;
+      color: #16a596;
+    }
+
+    .content {
+      font-size: 18px;
+      font-weight: $regular;
+      margin: 1% 0;
+
+      .label {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .owner-infor-block {
+    margin-left: 15px;
+    padding: 24px 28px;
+  }
+
+  .description {
+    margin-top: 1rem;
+  }
+
+  .booking-form {
+    padding: 10px 1px;
+    border: 1px solid rgba(154, 231, 195, 0.712);
+    border-radius: 15px;
+  }
+
+  .booking-toggle-button {
+    display: flex;
+    justify-content: center;
+    margin: 15px 5px 5px 5px;
+    font-size: 16px;
+    border-color: $main-color;
+    text-transform: none;
+    background-color: $main-color;
+    color: $hightlight;
+
+    &:hover {
+      background-color: #21bcaa;
+    }
+
+    & span {
+      color: $hightlight;
+    }
+  }
+
+  .delete-post-button {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .image {
+    background-repeat: repeat;
+    background-image: url("https://images.unsplash.com/photo-1521574873411-508db8dbe55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+  }
+
+  .similar-title {
+    white-space: nowrap;
+    margin-bottom: 18px;
+    margin-left: 0.5rem;
+    font-weight: $bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $text-color;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-component {
+    display: none;
+  }
+
+  .house-detail_name-and-price {
+    display: block;
+
+    .name-and-date {
+      padding-left: 0;
+      margin-bottom: 0;
+
+      .rent-name {
+        padding-top: 10px;
+      }
+    }
+
+    .price-unit {
+      margin-bottom: 20px;
+
+      .price {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .house-detail {
+    .owner-infor-block {
+      margin-left: 0;
+    }
+  }
+}

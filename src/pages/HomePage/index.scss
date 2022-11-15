@@ -1,0 +1,90 @@
+$main-color: #16a596;
+
+.home-page {
+  padding-left: 4vw;
+  padding-right: 3vw;
+
+  &_empty-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &_image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    & > span {
+      color: #8e8f8e;
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.pagination {
+  margin-top: 2vh;
+}
+
+.side-bar {
+  display: none;
+}
+
+.no_data {
+  height: calc(100vh - 84px);
+
+  &_content {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &__text {
+      font-family: sans-serif;
+      font-size: 35px;
+      font-weight: normal;
+      margin: 0 0 50px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #082b34;
+    }
+  }
+}
+
+.university-finding {
+  border-radius: 4px;
+  margin: 0 10px;
+  background-image: url("https://i.chungta.vn/2020/09/20/2-1600585802_860x0.jpg");
+  background-size: cover;
+  height: 250px;
+  position: relative;
+
+  &_title {
+    font-size: x-large;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 2px #bed4d1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .filter-panel {
+    display: none;
+  }
+
+  .footer-component {
+    display: none;
+  }
+
+  .side-bar {
+    display: block;
+  }
+}

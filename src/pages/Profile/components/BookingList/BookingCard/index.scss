@@ -1,0 +1,22 @@
+.booking-card {
+  &_card {
+    display: block;
+
+    &_content {
+      flex: "1 0 auto";
+
+      &_grid {
+        display: block;
+
+        &_link {
+          text-decoration: none;
+          color: black;
+        }
+
+        &_typo {
+          margin-right: 1%;
+        }
+      }
+    }
+  }
+}

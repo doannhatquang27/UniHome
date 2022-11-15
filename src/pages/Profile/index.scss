@@ -1,0 +1,31 @@
+.profile-page {
+  background-color: rgba(22, 165, 150, 0.1);
+
+  & > main {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  &_main {
+    &_container {
+      justify-content: center;
+    }
+
+    &_box {
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    &_avatar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.progress-bar {
+  margin: 0 auto;
+  width: 70%;
+}

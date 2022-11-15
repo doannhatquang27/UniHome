@@ -1,0 +1,9 @@
+$main-color: #16a596;
+
+.appbar-headline {
+  height: 7vh;
+  display: flex;
+  background-color: $main-color;
+  justify-content: flex-end;
+  align-items: center;
+}

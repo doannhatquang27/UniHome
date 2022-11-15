@@ -1,0 +1,27 @@
+$main-color: #16a596;
+$hightlight: #fffdf8;
+
+.new-service-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+
+  &_card-header {
+    background-color: $main-color;
+    color: $hightlight;
+
+    &_icon {
+      color: $hightlight;
+    }
+  }
+
+  &_card-content {
+    &_price-unit {
+      padding-top: 16px;
+    }
+  }
+}

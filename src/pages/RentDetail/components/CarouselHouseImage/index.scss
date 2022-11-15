@@ -1,0 +1,11 @@
+.carousel-house {
+  .dot {
+    overflow-y: auto;
+  }
+  .dot-with-over-flow {
+    overflow-y: auto;
+    & > ul {
+      justify-content: start;
+    }
+  }
+}

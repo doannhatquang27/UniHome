@@ -1,0 +1,45 @@
+import IBookSlot from "./IBookingSlot";
+import IQnA from "./IConversation";
+import IFacility from "./IFacility";
+import IRentEntity from "./IRentEntity";
+import IRentType from "./IRentType";
+import IUniHouse from "./IUniHouse";
+
+export default interface IHouse {
+  houseId: string;
+  name: string;
+  wardId: string;
+  address: string;
+  status: number;
+  image: string;
+  udpateTime: string;
+  longitude: number;
+  latitude: number;
+  houseTypeId: string;
+  buildingId: string;
+  ownerId: string;
+  ownerName: string;
+  ownerPhone: string;
+  createdBy: string;
+  creatorAvatar: string;
+  certificateOfOwnership: string;
+  statusString: string;
+  districtId: string;
+  districtName: string;
+  buildingName: string;
+  wardName: string;
+  houseTypeName: string;
+  bookingSlots: IBookSlot[];
+  uniHouses: IUniHouse[];
+  conversations: IQnA[];
+  fullAddress: string;
+  minPrice: number;
+  maxPrice: number;
+  minArea: number;
+  maxArea: number;
+  hasSharing: boolean;
+  distance: number;
+  rentTypes: IRentType[];
+  rentFacilities: IFacility[];
+  rentEntity: IRentEntity;
+}

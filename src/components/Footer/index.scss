@@ -1,0 +1,76 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+$disable: #d6d6d6;
+
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5vh calc(4vw + 8px);
+  background: #d6d6d669;
+  // border-top: 15px solid #c3c3c357;
+
+  &_link {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 2vw;
+
+    &_first {
+      justify-content: space-between;
+      padding: 0;
+
+      .space {
+        height: 10;
+      }
+    }
+
+    & > a {
+      text-decoration: none;
+      color: $text-color;
+      margin-bottom: 12px;
+    }
+
+    & * img {
+      width: 100%;
+    }
+
+    &_title {
+      font-size: 19px;
+      font-weight: 600;
+      color: $text-color;
+      margin-bottom: 20px;
+    }
+
+    &_icon {
+      margin-left: 10px;
+    }
+  }
+
+  .company-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > span {
+      color: $text-color;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.mobile-logo {
+  margin-top: 10px;
+}

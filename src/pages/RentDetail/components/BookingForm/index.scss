@@ -1,0 +1,130 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+$disable: #d6d6d6;
+
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+.form {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  & > * {
+    margin-top: 20px;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .name-field {
+    & > .MuiOutlinedInput-root {
+      background-color: white;
+    }
+  }
+
+  .email-field {
+    & > .MuiOutlinedInput-root {
+      background-color: white;
+    }
+  }
+
+  .phone-field {
+    & > .MuiOutlinedInput-root {
+      background-color: white;
+    }
+  }
+
+  .date-picker {
+    & > .MuiOutlinedInput-root {
+      background-color: white;
+    }
+  }
+
+  .phone-field {
+    & > .MuiOutlinedInput-root {
+      background-color: white;
+    }
+  }
+
+  .booking-slot {
+    &__confirm {
+      display: flex;
+
+      &__field {
+        display: flex;
+        flex: 1;
+        // margin-right: 5px;
+        & > .MuiOutlinedInput-root {
+          background-color: white;
+        }
+      }
+
+      &__button {
+        background-color: $main-color;
+
+        &:hover {
+          background-color: $sub-main;
+        }
+
+        & span {
+          color: $hightlight;
+        }
+      }
+    }
+
+    &__button-group {
+      background-color: white;
+      margin: 4px;
+
+      &--morning {
+        background-color: rgba(231, 45, 45, 0.871);
+        & span {
+          color: $hightlight;
+        }
+      }
+
+      &--afternoon {
+        background-color: rgba(62, 62, 216, 0.871);
+        & span {
+          color: $hightlight;
+        }
+      }
+    }
+
+    &__grid {
+      padding: 1%;
+    }
+
+    &__slot-button {
+      background-color: white;
+      padding: 5px 5px;
+    }
+  }
+
+  .error {
+    font-family: "Inter", sans-serif;
+    color: red;
+  }
+
+  .submit-button {
+    background-color: $main-color;
+
+    &:hover {
+      background-color: $sub-main;
+    }
+
+    & span {
+      color: $hightlight;
+    }
+  }
+}

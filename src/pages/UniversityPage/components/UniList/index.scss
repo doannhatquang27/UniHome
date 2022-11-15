@@ -1,0 +1,27 @@
+$main-color: #16a596;
+$sub-main: #21bcaa;
+$hightlight: #fffdf8;
+$text-color: #42464d;
+$disable: #d6d6d6;
+
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+$border-radius: 4px;
+
+.uni-list {
+  padding-left: calc(4vw - 8px);
+  padding-right: calc(4vw - 8px);
+
+  &_title {
+    color: $text-color;
+    font-weight: $medium;
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+}

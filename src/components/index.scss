@@ -1,0 +1,29 @@
+.menu-notification {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(177, 172, 172, 0.8);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(235, 235, 235);
+  }
+}
+
+.MuiInput-underline::before {
+  border-bottom: none !important;
+}
+
+.MuiInput-underline::after {
+  border-bottom: none !important;
+}
